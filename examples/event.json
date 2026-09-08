@@ -1,0 +1,9 @@
+{
+  "event_id": "example-only",
+  "garment_id": "g-1001",
+  "customer": "retextil_demo",
+  "policy_version": 3,
+  "grade": {"grade": "B", "confidence": 0.88, "reason": "severity/confidence matched B"},
+  "route": {"route": "resale", "reason": "meets resale rules", "requires_human": false},
+  "total_latency_ms": 22.4
+}

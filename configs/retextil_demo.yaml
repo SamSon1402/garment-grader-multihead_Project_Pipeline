@@ -1,0 +1,54 @@
+customer: retextil_demo
+version: 3
+
+quality:
+  min_brightness: 35
+  max_brightness: 225
+  min_blur_variance: 45
+  min_nir_signal: 0.10
+  max_nir_signal: 0.98
+
+grade:
+  A:
+    max_defect_severity: 0.18
+    min_confidence: 0.86
+  B:
+    max_defect_severity: 0.45
+    min_confidence: 0.78
+  C:
+    max_defect_severity: 0.80
+    min_confidence: 0.70
+
+pricing:
+  base_eur:
+    tshirt: 10
+    shirt: 18
+    jeans: 25
+    jacket: 45
+    dress: 32
+    unknown: 8
+  grade_multiplier:
+    A: 1.00
+    B: 0.72
+    C: 0.38
+    REVIEW: 0.00
+
+routing:
+  premium_resale:
+    grades: [A]
+    min_value_eur: 20
+  resale:
+    grades: [A, B]
+    min_value_eur: 8
+  repair:
+    grades: [C]
+    max_defect_severity: 0.70
+  recycling:
+    grades: [C]
+    min_defect_severity: 0.70
+  manual_review:
+    grades: [REVIEW]
+
+projection:
+  enabled_for: [B, C, REVIEW]
+  show_defects: true
