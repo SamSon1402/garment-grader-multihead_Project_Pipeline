@@ -2,6 +2,9 @@
 
 A small but production-shaped **computer vision system for grading and routing second-hand garments on a conveyor**.
 
+<img width="1920" height="1080" alt="garment_grader_metrics_clean_1920x1080" src="https://github.com/user-attachments/assets/97b4371d-c71b-4e73-9597-65d100c805c9" />
+
+
 It is intentionally not a full commercial product. It contains the core code a technical reviewer would expect to see: input validation, model-provider abstraction, multimodal RGB + NIR results, grading policy, routing, projection commands, event storage, metrics, tests, Docker, and clear failure paths.
 
 ## The problem
